@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en" class="wide smoothscroll wow-animation">
+
+  {% include head.html %}
+
+  <body>
+    <!--========================================================
+                              HEADER
+    =========================================================-->
+    {% include header-portfolio.html %}
+
+    <main class="page-content">
+
+    <!--========================================================
+    													PORTFOLIO GALLERY
+    =========================================================-->
+
+    {% include photo-gallery.html %}
+
+    <!--========================================================
+    													ADDITIONAL CONTENT
+    =========================================================-->
+
+    <div class="container sg-port-content">
+        <div class="row">
+          <div class="col-xs-12">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+
+    {% include portfolio-pre-footer.html %}
+
+    </main>
+
+    {% include footer.html %}
+
+  </body>
+  
+
+</html>

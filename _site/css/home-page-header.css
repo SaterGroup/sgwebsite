@@ -1,0 +1,34 @@
+.hp-header {
+  height: 100vh;
+  background-image: url("/images/paralax-2019.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+
+}
+
+header .container-hp { text-align: center;
+
+  max-width: 1200px;}
+
+header .container-hp p {text-align: center;}
+header .container-hp h2 {text-align: center;}
+.insert-1sg {padding: 0 11%;}
+
+.custom-page a {text-decoration: underline; font-weight: bold;}
+.custom-page a:hover {color: blue;}
+
+.dan-face {float: left; padding-right: 15px;}

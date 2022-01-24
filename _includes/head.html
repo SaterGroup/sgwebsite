@@ -1,0 +1,96 @@
+<head>
+  <!-- Site Title -->
+   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
+   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="format-detection" content="telephone=no"/>
+  <meta name="viewport"
+        content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+
+  <!-- Stylesheets -->
+  <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+  <link href='https://fonts.googleapis.com/css?family=Lato:200,300,600,700,800%7CPlayfair+Display:400%7CMontserrat:400'
+        rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/home-page-header.css">
+
+  <!--[if lt IE 10]>
+  <script src="js/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <!-- Global Site Tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-2327259-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)};
+  gtag('js', new Date());
+
+  gtag('config', 'UA-2327259-13');
+</script>
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+
+
+<link href="/css/lightbox.css" rel="stylesheet">
+
+<meta name="google-site-verification" content="ok_wIBncTHR32gsYQsN9bDAe-PRHrRglvEzwf_5MIDk" />
+
+<script type="application/ld+json">
+ { "@context": "https://schema.org",
+ "@type": "Organization",
+ "name": "Sater Group",
+ "legalName" : "Sater Design Collection, Inc.",
+ "url": "https://satergroup.com",
+ "logo": "https://satergroup.com/images/Sater_Group_Logo.png",
+ "foundingDate": "1988",
+ "founders": [
+ {
+ "@type": "Person",
+ "name": "Dan Sater"
+ },
+ {
+ "@type": "Person",
+ "name": ""
+ } ],
+ "address": {
+ "@type": "PostalAddress",
+ "streetAddress": "25241 Elementary Way, Suite 102",
+ "addressLocality": "Bonita Springs",
+ "addressRegion": "FL",
+ "postalCode": "34135",
+ "addressCountry": "USA"
+ },
+ "contactPoint": {
+ "@type": "ContactPoint",
+ "contactType": "customer support",
+ "telephone": "[+239-495-2106]",
+ "email": "customerservice@saterdesign.com"
+ },
+ "sameAs": [
+ "https://www.youtube.com/user/saterdesign",
+ "https://www.facebook.com/luxuryhomeplans",
+ "https://twitter.com/SaterDesign",
+ "https://www.linkedin.com/in/dansateriiaibd/",
+ "https://www.flickr.com/photos/custom-luxury-homes-sater-group/"
+ ]}
+</script>
+
+  {% include open-graph.html %}
+</head>

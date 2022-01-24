@@ -1,0 +1,89 @@
+<header class="page-header page-header-full-height bg-grayscale-darken">
+	{% include nav-bar.html %}
+
+	<div class="rd-parallax"
+			 data-on="false"
+			 data-lg-on="true">
+
+
+		<div class="rd-parallax-layer"
+				 data-type="media"
+				 {% for image-parallax in page.image-parallax %}
+				 data-url="{{ image-parallax.image_path }}"
+				 {% endfor %}
+				 >
+		</div>
+
+		<div class="rd-parallax-layer"
+				 data-type="html">
+			<div class="page-header__body text-center">
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12 col-lg-preffix-1 col-lg-10">
+							<h2 class="editable">The {{ page.plan-name }} <br><span class="text-sbold text-primary">{{ page.highlighted-text }} </span><br>
+								{{ page.home-type }} Home</h2>
+
+							<div class="inset-1">
+								<p class="big editable">{{ page.short-description }}</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	{% include social-links.html %}
+
+	<script type="application/ld+json">
+	{
+		"@context":"http://schema.org",
+		"@type": "BlogPosting",
+		"mainEntityOfPage": {
+         "@type": "WebPage",
+         "@id": "{{ base.url }}{{ page.url }}"
+          },
+		"image": "{{ base.url }}{{ page.image }}",
+		"url": "{{ base.url }}",
+		"headline": "{{ page.title }}",
+		"alternativeHeadline": "{{ page.short-description }}",
+		"dateCreated": "{{ page.date }}",
+		"datePublished": "{{ page.date }}",
+		"dateModified": "{{ page.date }}",
+		"inLanguage": "en-US",
+		"isFamilyFriendly": "true",
+		"copyrightYear": "1988-{{ page.date }}",
+		"copyrightHolder": "Sater Design Collection, Inc.",
+		"contentLocation": {
+			"@type": "Place",
+			"name": "Bonita Beach, FL"
+		},
+		"accountablePerson": {
+			"@type": "Person",
+			"name": "Dan Sater II",
+			"url": "https://saterdesign.com"
+		},
+		"author": {
+			"@type": "Person",
+			"name": "Dan Sater II",
+			"url": "https://saterdesign.com"
+		},
+		"creator": {
+			"@type": "Person",
+			"name": "Dan Sater II",
+			"url": "https://saterdesign.com"
+		},
+		"publisher": {
+			"@type": "Organization",
+			"name": "Dan Sater II",
+			"url": "https://saterdesign.com",
+			"logo": {
+				"@type": "ImageObject",
+				"url": "https://satergroup.com/images/Sater_Group_Logo.png",
+				"width":"400",
+				"height":"74"
+			}
+		}
+	}
+</script>
+
+</header>

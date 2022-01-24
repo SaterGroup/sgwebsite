@@ -1,0 +1,47 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: The Sater Group
+email: customerservice@saterdesign.com
+description: The Sater Group has been designing custom homes for over 35 years, Dan Sater is an award winning home designer.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://satergroup.com
+twitter_username: jekyllrb
+github_username:  jekyll
+
+google_analytics:
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+excerpt_separator: <!--more-->
+
+
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+
+paginate: 5
+paginate_path: '/blog/page:num/'
+
+# Includes
+include: ["_pages"]
+
+
+collections:
+  custom_homes:
+    output: true
