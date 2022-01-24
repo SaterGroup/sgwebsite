@@ -17,7 +17,7 @@ title: The Sater Group
 email: customerservice@saterdesign.com
 description: The Sater Group has been designing custom homes for over 35 years, Dan Sater is an award winning home designer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: https://satergroup.com
+url:
 twitter_username: jekyllrb
 github_username:  jekyll
 
